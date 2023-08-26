@@ -1,0 +1,24 @@
+model_source: "local_cifar"
+kwargs:
+  stem_width: 96
+  depth:
+    - 30
+    - 31
+    - 10
+  stage_width:
+    - 216
+    - 432
+    - 864
+  groups:
+    - 1
+    - 1
+    - 1
+  activation_fn:
+    _target_: hydra.utils.get_class
+    path: torch.nn.SiLU
+  se_ratio: 0.25
+  se_activation:
+    _target_: hydra.utils.get_class
+    path: torch.nn.ReLU
+  se_order: 2
+  num_classes: ${dataset.n_classes}

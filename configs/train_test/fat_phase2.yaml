@@ -1,0 +1,16 @@
+defaults:
+  - fat_default
+
+phase: "phase2"
+batch_size: 224
+workers: 16
+crop_size: 224
+lr_epochs:
+  - 6
+  - 12
+lr_values:
+  - 0.04
+  - 0.004
+start_epoch: 6
+end_epoch: 12
+resume: "${train_test.model_dir}/phase1/ckpt_epoch6.pt"

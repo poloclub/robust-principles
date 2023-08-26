@@ -1,0 +1,35 @@
+mode: "at_pgd"
+device: "cuda"
+print_freq: 10
+half: false  # amp speedup
+evaluate: false
+batch_size: 512
+workers: 16
+model_dir: "../trained_models/${name}_pgd_train_eps${attack.train.eps}_iter${attack.train.step}"
+
+resume: false
+start_epoch: 0
+end_epoch: 100
+
+# transform
+crop_size: 224
+color_jitter: 0
+lighting: false
+
+# optimizer
+optim: sgd
+lr: 5e-4
+momentum: 0.9
+weight_decay: 0.0001
+
+# lr schedule
+schedule: cosine
+cooldown_epochs: 10
+min_lr: 1e-5
+warmup_lr: 1e-6
+warmup_epochs: 10
+lr_cycle_mul: 1
+lr_cycle_decay: 0.5
+lr_cycle_limit: 1
+
+

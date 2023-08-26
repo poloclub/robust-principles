@@ -1,0 +1,14 @@
+device: "cuda"
+model_dir: "../trained_models/${name}_fat_train_eps${attack.train.eps}"
+optim: sgd
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0001
+half: true
+evaluate: false
+batch_size: ???
+workers: ???
+print_freq: 10
+mode: fat
+color_jitter: 0.0
+lighting: false

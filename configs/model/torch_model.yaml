@@ -1,0 +1,5 @@
+model_source: "torch"
+arch: "resnet18"
+kwargs:
+  pretrained: false
+  num_classes: ${dataset.n_classes}

@@ -1,0 +1,9 @@
+defaults:
+  - fat_default
+
+half: false
+evaluate: true
+batch_size: 128
+workers: 16
+crop_size: 288
+resume: "${train_test.model_dir}/phase3/model_best.pt"

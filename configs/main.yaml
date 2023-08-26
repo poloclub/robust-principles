@@ -1,0 +1,24 @@
+defaults:
+  - _self_
+  - dataset: imagenet
+  - train_test: fat_phase1
+  - attack: fat
+  - model: torch_model
+  - visualization: wandb
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+
+# Customize log name and output dir to experiments
+hydra:
+  run:
+    dir: ../experiments/${name}
+  sweep:
+    dir: ../experiments/${name}
+    subdir: ${hydra.job.num}
+  job:
+    name: ${name}
+    chdir: true
+
+
+
+name: test

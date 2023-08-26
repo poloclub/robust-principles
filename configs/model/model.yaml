@@ -1,0 +1,64 @@
+model_source: "local"
+kwargs:
+  stage_widths:
+    - 256
+    - 512
+    - 1024
+    - 2048
+  kernel: 3
+  strides:
+    - 1
+    - 2
+    - 2
+    - 2
+  dilation: 1
+  norm_layer:
+    - _target_: hydra.utils.get_class
+      path: torch.nn.BatchNorm2d
+    - _target_: hydra.utils.get_class
+      path: torch.nn.BatchNorm2d
+    - _target_: hydra.utils.get_class
+      path: torch.nn.BatchNorm2d
+  activation_layer:
+    - _target_: hydra.utils.get_class
+      path: torch.nn.ReLU
+    - _target_: hydra.utils.get_class
+      path: torch.nn.ReLU
+    - _target_: hydra.utils.get_class
+      path: torch.nn.ReLU
+  group_widths:
+    - 64
+    - 128
+    - 256
+    - 512
+  bottleneck_multipliers:
+    - 0.25
+    - 0.25
+    - 0.25
+    - 0.25
+  downsample_norm:
+    _target_: hydra.utils.get_class
+    path: torch.nn.BatchNorm2d
+  depths:
+    - 3
+    - 4
+    - 6
+    - 3
+  dense_ratio: null
+  stem_type:
+    _target_: hydra.utils.get_class
+    path: robustarch.models.model.Stem
+  stem_width: 64
+  stem_kernel: 7
+  stem_downsample_factor: 4
+  stem_patch_size: null
+  block_constructor:
+    _target_: hydra.utils.get_class
+    path: robustarch.models.model.BottleneckBlock
+  ConvBlock:
+    _target_: hydra.utils.get_class
+    path: robustarch.models.model.Conv2dNormActivation
+  se_ratio: null
+  se_activation: null
+  weight_init_type: "resnet"
+  num_classes: ${dataset.n_classes}

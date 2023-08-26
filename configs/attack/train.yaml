@@ -1,0 +1,11 @@
+train:
+  name: pgd
+  eps: 4
+  gamma: 6
+  step: 1
+  random_init: true
+  norm: "linf"
+  eps_schedule: "linear"
+  eps_schedule_epochs: 10
+  zero_eps_epochs: 0
+

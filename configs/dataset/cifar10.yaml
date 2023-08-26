@@ -1,0 +1,12 @@
+dataset: cifar10
+data_dir: "../data"
+max_color_value: 255.0
+mean:
+  - 0.4914
+  - 0.4822
+  - 0.4465
+std:
+  - 0.2471
+  - 0.2435
+  - 0.2616
+n_classes: 10

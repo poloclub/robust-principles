@@ -1,0 +1,10 @@
+timm
+wandb
+torch
+torchvision
+torchaudio
+packaging
+hydra-core==1.2.0
+hydra-colorlog==1.2.0
+ptflops==0.6.9
+git+https://github.com/RobustBench/robustbench.git

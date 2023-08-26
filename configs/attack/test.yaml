@@ -1,0 +1,11 @@
+defaults:
+  - train
+
+test:
+  name: pgd
+  eps: 4
+  gamma: 1
+  step: 10
+  random_init: true
+  norm: "linf"
+  restart: 1

@@ -1,0 +1,18 @@
+mode: "cifar_dm"
+device: "cuda"
+print_freq: 10
+half: false
+evaluate: true
+batch_size: 128
+workers: 16
+model_dir: "../trained_models/${name}_pgd_train_eps${attack.train.eps}_iter${attack.train.step}"
+
+resume: "${train_test.model_dir}/model_best.pt"
+
+crop_size: 32
+
+# optimizer
+optim: sgd
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0001

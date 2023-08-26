@@ -1,0 +1,14 @@
+mode: "fat"
+
+train:
+  eps: 5
+  random_init: true
+
+test:
+  name: pgd
+  eps: 4
+  gamma: 1
+  step: 10
+  random_init: true
+  norm: "linf"
+  restart: 1

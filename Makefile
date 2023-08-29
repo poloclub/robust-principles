@@ -169,7 +169,7 @@ experiments/$(NAME)/.done_test_pretrained:
 ifneq ("$(wildcard $(RARESNET50_WEIGHTS))", "")
 	$(info RaResNet50 weights file already exists.)
 else
-	wget -c https://huggingface.co/poloclub/Ra-Principles/resolve/main/ra_resnet50_imagenet.pt -P trained_models/pretrained
+	wget -c https://huggingface.co/poloclub/robust-principles/resolve/main/ra_resnet50_imagenet.pt -P trained_models/pretrained
 	$(info RaResNet50 weights file are successfully downloaded.)
 endif
 	$(TEST_PGD) $(TRAIN_PGD3_EPS4) $(AUTOATTACK_IN) $(RESNET50) $(RaResNet50) ++train_test.resume="../$(RARESNET50_WEIGHTS)"
@@ -202,7 +202,7 @@ experiments/$(NAME)/.done_test_pretrained:
 ifneq ("$(wildcard $(RARESNET101_WEIGHTS))", "")
 	$(info RaResNet101 weights file already exists.)
 else
-	wget -c https://huggingface.co/poloclub/Ra-Principles/resolve/main/ra_resnet101_imagenet.pt -P trained_models/pretrained
+	wget -c https://huggingface.co/poloclub/robust-principles/resolve/main/ra_resnet101_imagenet.pt -P trained_models/pretrained
 	$(info RaResNet101 weights file are successfully downloaded.)
 endif
 	$(TEST_PGD) $(TRAIN_PGD3_EPS4) $(AUTOATTACK_IN) $(RESNET50) $(RaResNet101) ++train_test.resume="../$(RARESNET101_WEIGHTS)"
@@ -235,7 +235,7 @@ experiments/$(NAME)/.done_test_pretrained:
 ifneq ("$(wildcard $(RAWRN101_2_WEIGHTS))", "")
 	$(info RaWRN101_2 weights file already exists.)
 else
-	wget -c https://huggingface.co/poloclub/Ra-Principles/resolve/main/ra_wrn101_2_imagenet.pt -P trained_models/pretrained
+	wget -c https://huggingface.co/poloclub/robust-principles/resolve/main/ra_wrn101_2_imagenet.pt -P trained_models/pretrained
 	$(info RaWRN101_2 weights file are successfully downloaded.)
 endif
 	$(TEST_PGD) $(TRAIN_PGD3_EPS4) $(AUTOATTACK_IN) $(RESNET50) $(RaWRN101_2) ++train_test.resume="../$(RAWRN101_2_WEIGHTS)"
@@ -253,7 +253,7 @@ experiments/$(NAME)/.done_test_pretrained:
 ifneq ("$(wildcard $(RA_WRN70_16_WEIGHTS))", "")
 	$(info RaWRN70_16 weights file already exists.)
 else
-	wget -c https://huggingface.co/poloclub/Ra-Principles/resolve/main/ra_wrn70_16_cifar10.pt -P trained_models/pretrained
+	wget -c https://huggingface.co/poloclub/robust-principles/resolve/main/ra_wrn70_16_cifar10.pt -P trained_models/pretrained
 	$(info RaWRN70_16 weights file are successfully downloaded.)
 endif
 	$(TEST_AA_CIFAR) $(AUTOATTACK_CIFAR) $(RaWRN70_16) ++train_test.resume="../$(RA_WRN70_16_WEIGHTS)"

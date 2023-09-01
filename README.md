@@ -66,6 +66,12 @@ make experiments/RaResNet50/.done_test_pretrained
 ### Citation
 
 ```bibtex
-@misc{
+@misc{peng2023robust,
+      title={Robust Principles: Architectural Design Principles for Adversarially Robust CNNs}, 
+      author={ShengYun Peng and Weilin Xu and Cory Cornelius and Matthew Hull and Kevin Li and Rahul Duggal and Mansi Phute and Jason Martin and Duen Horng Chau},
+      year={2023},
+      eprint={2308.16258},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```

@@ -8,6 +8,11 @@ Our research aims to unify existing works' diverging opinions on how architectur
     <img src="img/principles.png" alt="drawing" width="600"/>
 </p>
 
+## News
+`Aug. 2023` - Paper accepted by BMVC'23 
+
+`Sep. 2023` - 🎉 We are the top on [RobustBench CIFAR-10 $\ell_\infty = 8/255$ leaderboard](https://robustbench.github.io/#div_cifar10_Linf_heading)
+
 ### Prerequisites
 1. Prepare ImageNet via [Fast AT - Installation step 3 & 4](https://github.com/locuslab/fast_adversarial/tree/master/ImageNet)
 > Step 4 is only for Fast-AT.

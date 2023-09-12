@@ -1,4 +1,6 @@
-## Architectural Design Principles for Adversarially Robust CNNs
+## [Robust Principles: Architectural Design Principles for Adversarially Robust CNNs](https://arxiv.org/abs/2308.16258)
+[![arxiv badge](https://img.shields.io/badge/arXiv-2308.16258-red)](https://arxiv.org/abs/2308.16258)
+[![license](https://img.shields.io/badge/License-MIT-success)](https://github.com/poloclub/wizmap/blob/main/LICENSE)
 
 Our research aims to unify existing works' diverging opinions on how architectural components affect the adversarial robustness of CNNs. To accomplish our goal, we synthesize a suite of three generalizable robust architectural design principles: (a) optimal range for depth and width configurations, (b) preferring convolutional over patchify stem stage, and (c) robust residual block design through adopting squeeze and excitation blocks and non-parametric smooth activation functions. Through extensive experiments across a wide spectrum of dataset scales, adversarial training methods, model parameters, and network design spaces, our principles consistently and markedly improve AutoAttack accuracy: 1-3 percentage points (pp) on CIFAR-10 and CIFAR-100, and 4-9 pp on ImageNet.
 
@@ -66,12 +68,10 @@ make experiments/RaResNet50/.done_test_pretrained
 ### Citation
 
 ```bibtex
-@misc{peng2023robust,
-      title={Robust Principles: Architectural Design Principles for Adversarially Robust CNNs}, 
-      author={ShengYun Peng and Weilin Xu and Cory Cornelius and Matthew Hull and Kevin Li and Rahul Duggal and Mansi Phute and Jason Martin and Duen Horng Chau},
-      year={2023},
-      eprint={2308.16258},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{peng2023robust,
+  title={Robust Principles: Architectural Design Principles for Adversarially Robust CNNs},
+  author={Peng, ShengYun and Xu, Weilin and Cornelius, Cory and Hull, Matthew and Li, Kevin and Duggal, Rahul and Phute, Mansi and Martin, Jason and Chau, Duen Horng},
+  journal={arXiv preprint arXiv:2308.16258},
+  year={2023}
 }
 ```

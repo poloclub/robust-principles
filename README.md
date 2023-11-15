@@ -10,7 +10,7 @@ This is a PyTorch implementation of the BMVC'23 paper [Robust Principles: Archit
 - [x] <a href="https://shengyun-peng.github.io/papers/posters/22_robarch.pdf">Poster 🪧</a>
 
 <p align="center">
-    <img src="img/principles.png" alt="robust principles" width="500"/>
+    <img src="img/principles.png" alt="robust principles" width="600"/>
 </p>
 
 ## News
@@ -19,7 +19,7 @@ This is a PyTorch implementation of the BMVC'23 paper [Robust Principles: Archit
 `Sep. 2023` - 🎉 We are the top on [RobustBench CIFAR-10 $\ell_\infty = 8/255$ leaderboard](https://robustbench.github.io/#div_cifar10_Linf_heading)
 
 <p align="center">
-    <img src="img/robustbench.png" alt="drawing" width="500"/>
+    <img src="img/robustbench.png" alt="drawing" width="600"/>
 </p>
 
 ## Get Started

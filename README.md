@@ -1,11 +1,16 @@
-## [Robust Principles: Architectural Design Principles for Adversarially Robust CNNs](https://arxiv.org/abs/2308.16258)
+# Robust Principles: Architectural Design Principles for Adversarially Robust CNNs
 [![arxiv badge](https://img.shields.io/badge/arXiv-2308.16258-red)](https://arxiv.org/abs/2308.16258)
 [![license](https://img.shields.io/badge/License-MIT-success)](https://github.com/poloclub/wizmap/blob/main/LICENSE)
 
-Our research aims to unify existing works' diverging opinions on how architectural components affect the adversarial robustness of CNNs. To accomplish our goal, we synthesize a suite of three generalizable robust architectural design principles: (a) optimal range for depth and width configurations, (b) preferring convolutional over patchify stem stage, and (c) robust residual block design through adopting squeeze and excitation blocks and non-parametric smooth activation functions. Through extensive experiments across a wide spectrum of dataset scales, adversarial training methods, model parameters, and network design spaces, our principles consistently and markedly improve AutoAttack accuracy: 1-3 percentage points (pp) on CIFAR-10 and CIFAR-100, and 4-9 pp on ImageNet.
+This is a PyTorch implementation of the BMVC'23 paper [Robust Principles: Architectural Design Principles for Adversarially Robust CNNs](https://arxiv.org/abs/2308.16258).
+
+- [x] <a href="https://www.youtube.com/watch?v=S-N1iuA0hAY">Video presentation 📺</a>
+- [x] <a href="https://arxiv.org/abs/2308.16258">Research Paper 📖</a>
+- [x] <a href="https://shengyun-peng.github.io/papers/robust-principles">Project Page 🚀</a>
+- [x] <a href="https://shengyun-peng.github.io/papers/posters/22_robarch.pdf">Poster 🪧</a>
 
 <p align="center">
-    <img src="img/principles.png" alt="drawing" width="600"/>
+    <img src="img/principles.png" alt="robust principles" width="500"/>
 </p>
 
 ## News
@@ -13,10 +18,13 @@ Our research aims to unify existing works' diverging opinions on how architectur
 
 `Sep. 2023` - 🎉 We are the top on [RobustBench CIFAR-10 $\ell_\infty = 8/255$ leaderboard](https://robustbench.github.io/#div_cifar10_Linf_heading)
 
-### Prerequisites
-1. Prepare ImageNet via [Fast AT - Installation step 3 & 4](https://github.com/locuslab/fast_adversarial/tree/master/ImageNet)
-> Step 4 is only for Fast-AT.
-2. Set up venv:
+<p align="center">
+    <img src="img/robustbench.png" alt="drawing" width="500"/>
+</p>
+
+## Get Started
+1. Prepare ImageNet via [Fast AT - Installation step 3 & 4](https://github.com/locuslab/fast_adversarial/tree/master/ImageNet) (Step 4 is only for Fast-AT.)
+2. Set up python environment:
 ```bash
 make .venv_done
 ```
@@ -26,7 +34,7 @@ make .venv_done
 make check_dir
 ```
 
-### Training
+## Training & Evaluation
 #### Fast AT - ResNet-50
 ```bash
 make experiments/Torch_ResNet50/.done_test_pgd
@@ -53,7 +61,7 @@ make experiments/RaResNet50/.done_test_aa
 make experiments/RaResNet50/.done_test_pretrained
 ```
 
-### Pretrained models
+## Trained Model Weights
 - ImageNet $\ell_\infty$
 
 | Architecture | #Param | Clean(%) | AA(%) | PGD100-2(%) | PGD100-4(%) | PGD100-8(%) |
@@ -70,7 +78,7 @@ make experiments/RaResNet50/.done_test_pretrained
 | [Diff. 1M](https://arxiv.org/abs/2302.04638) | RaWRN-70-16 | 92.16 | 66.33 | 70.37 | 70.25 | 38.73 | 42.61 |
 | [Diff. 50M](https://arxiv.org/abs/2302.04638) | [RaWRN-70-16](https://huggingface.co/poloclub/Ra-Principles/blob/main/ra_wrn70_16_cifar10.pt) | 93.27 | 71.09 | 75.29 | - | - | - |
 
-### Citation
+## Citation
 
 ```bibtex
 @article{peng2023robust,
@@ -80,5 +88,7 @@ make experiments/RaResNet50/.done_test_pretrained
   year={2023}
 }
 ```
-### Contact
-- [Anthony Peng](https://shengyun-peng.github.io/)
+## Contact
+If you have any questions, feel free to [open an issue](https://github.com/poloclub/robust-principles/issues/new) or contact [Anthony Peng](https://shengyun-peng.github.io/) (CS PhD @Georgia Tech).
+
+

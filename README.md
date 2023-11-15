@@ -4,7 +4,7 @@
 
 This is a PyTorch implementation of the BMVC'23 paper [Robust Principles: Architectural Design Principles for Adversarially Robust CNNs](https://arxiv.org/abs/2308.16258).
 
-- [x] <a href="https://www.youtube.com/watch?v=S-N1iuA0hAY">Video presentation 📺</a>
+- [x] <a href="https://www.youtube.com/watch?v=S-N1iuA0hAY">Video Presentation 📺</a>
 - [x] <a href="https://arxiv.org/abs/2308.16258">Research Paper 📖</a>
 - [x] <a href="https://shengyun-peng.github.io/papers/robust-principles">Project Page 🚀</a>
 - [x] <a href="https://shengyun-peng.github.io/papers/posters/22_robarch.pdf">Poster 🪧</a>
@@ -35,7 +35,7 @@ make check_dir
 ```
 
 ## Training & Evaluation
-#### Fast AT - ResNet-50
+#### Fast adversarial training (AT) - ResNet-50
 ```bash
 make experiments/Torch_ResNet50/.done_test_pgd
 ```

@@ -6,6 +6,10 @@
 
 📺 <a href="https://www.youtube.com/watch?v=S-N1iuA0hAY">Video Presentation</a> &nbsp;&nbsp;&nbsp;&nbsp; 📖 <a href="https://arxiv.org/abs/2308.16258">Research Paper</a> &nbsp;&nbsp;&nbsp;&nbsp;  🚀<a href="https://shengyun-peng.github.io/papers/robust-principles">Project Page</a> &nbsp;&nbsp;&nbsp;&nbsp; 🪧 <a href="https://shengyun-peng.github.io/papers/posters/22_robarch.pdf">Poster</a>
 
+
+https://github.com/poloclub/robust-principles/assets/84164548/c77259e4-b5a3-47b0-93d6-deba74d4131b
+
+
 <p align="center">
     <img src="img/principles.png" alt="robust principles" width="100%"/>
 </p>

@@ -90,6 +90,15 @@ make experiments/RaResNet50/.done_test_pretrained
   journal={arXiv preprint arXiv:2308.16258},
   year={2023}
 }
+
+@misc{peng2023robarch,
+      title={RobArch: Designing Robust Architectures against Adversarial Attacks}, 
+      author={ShengYun Peng and Weilin Xu and Cory Cornelius and Kevin Li and Rahul Duggal and Duen Horng Chau and Jason Martin},
+      year={2023},
+      eprint={2301.03110},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## Contact
